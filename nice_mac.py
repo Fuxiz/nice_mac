@@ -1,4 +1,5 @@
-mac = input()
+import sys
+mac = str(sys.argv[1])
 mac = mac.replace('.','').replace(':','').replace('-','')
 charmac = [] 
 for char in mac:
