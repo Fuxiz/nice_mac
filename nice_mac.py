@@ -1,7 +1,7 @@
-mac2 = "d0509954c1d4"
-mac2 = mac2.replace('.','').replace(':','').replace('-','')
+mac = input()
+mac = mac.replace('.','').replace(':','').replace('-','')
 charmac = [] 
-for char in mac2:
+for char in mac:
     charmac.append(str(char)) 
 macindex = charmac.copy()
 l = [[":","-","."],[2, 5, 8, 11, 14],[4,9],[2, 5, 8, 11, 14]]
