@@ -1,6 +1,5 @@
 import sys
-# mac2 = str(sys.argv[1]).replace('.','').replace(':','').replace('-','')
-mac2 = list("32-15-D2-36-1D-52 ".replace('.','').replace(':','').replace('-',''))
+mac2 = list(str(sys.argv[1]).replace('.','').replace(':','').replace('-',''))
 cleanmac = mac2.copy()
 l = [[":","-","-",".","."],[2, 5, 8, 11, 14],[6],[4,9],[2, 5, 8, 11, 14],[4,9]]
 for g in range(0,len(l)-1):     #Loops through every list
