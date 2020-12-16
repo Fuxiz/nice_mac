@@ -9,4 +9,3 @@ Formats MAC addresses
 - AAAA.AAAA.AAAA
 - AAAAAAAAAAAA
 
-- 
