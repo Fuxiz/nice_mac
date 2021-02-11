@@ -1,4 +1,11 @@
 import sys
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-u", "--upper",dest ="uppercase", default="-l", help="Uppercase")
+parser.add_argument("-l", "--lower",dest = "lowercase", default="-l",help="Lowercase")
+parser.add_argument('text', action='store', type=str, help='The text to parse.')
+args = parser.parse_args()
 
 syslen= len(sys.argv)
 for numb in range(1, syslen):
