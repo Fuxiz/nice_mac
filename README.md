@@ -9,3 +9,5 @@ Formats MAC addresses
 - AAAA.AAAA.AAAA
 - AAAAAAAAAAAA
 
+## Userful command
+cat macfile.txt | xargs -L 1 -I {} python3 nice_mac.py {}
