@@ -1,4 +1,4 @@
-# nice_mac
+# nice mac
 Formats MAC addresses
 
 ## Formats
