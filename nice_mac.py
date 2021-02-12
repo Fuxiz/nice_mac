@@ -5,11 +5,8 @@ parser.add_argument("-u", "--upper",dest ="uppercase", default="-l", help="Print
 parser.add_argument("-l", "--lower",dest = "lowercase", default="-l",help="Print mac addresses in lowercase",action='store_true')
 parser.add_argument('mac', action='store', type=str, help='Mac address',nargs='*')
 args = parser.parse_args()
-print(args.mac)
-print(args.uppercase)
 
 for item in args.mac:
-    print(item)
     mac2 = list(str(item).replace('.','').replace(':','').replace('-',''))
     cleanmac = mac2.copy();print("".join(cleanmac).lower())
     charlist = [[":","-","-",".","."],[2, 5, 8, 11, 14],[6],[4,9],[2, 5, 8, 11, 14],[4,9]]
