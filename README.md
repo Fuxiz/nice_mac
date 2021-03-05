@@ -13,7 +13,7 @@ A handy tool when working with diffrent tools that require diffrent type of mac 
 - AAAA.AAAA.AAAA
 - AAAAAAAAAAAA
 
-```
+```bash
 usage: nice_mac.py [-h] [-u] [mac [mac ...]]
 
 positional arguments:
