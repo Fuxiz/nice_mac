@@ -8,8 +8,8 @@ args = parser.parse_args()
 
 for item in args.mac:
     mac2 = list(str(item).replace('.','').replace(':','').replace('-',''))
-    cleanmac = mac2.copy();print("".join(cleanmac).lower())
-    charlist = [[":","-","-",".","."],[2, 5, 8, 11, 14],[6],[4,9],[2, 5, 8, 11, 14],[4,9]]
+    cleanmac = mac2.copy()
+    charlist = [["",":","-","-",".","."],[0],[2, 5, 8, 11, 14],[6],[4,9],[2, 5, 8, 11, 14],[4,9]]
     for listpos in range(0,len(charlist)-1):     #Loops through every list
         m = listpos; listpos+=1                       #while g steps through each list it also steps through each character
         for i in range(0,len(charlist[listpos])):       #looks up and loops the amount of character in the list 
